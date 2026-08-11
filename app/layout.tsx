@@ -3,7 +3,7 @@ import "./globals.css";
 
 const title = "ALT CRZ Solutions AB | IT-tjänster för flygbranschen";
 const description =
-  "ALT CRZ Solutions AB utvecklar och driver IT-tjänster med primärt fokus på flygbranschen. Företaget har adress i Jonstorp, Skåne.";
+  "ALT CRZ Solutions AB utvecklar och driver IT-tjänster med primärt fokus på flygbranschen – digitala lösningar för en bransch i ständig rörelse.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://altcrz.se"),

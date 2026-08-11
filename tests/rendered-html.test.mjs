@@ -13,9 +13,24 @@ test("exports a complete Swedish company website", async () => {
   assert.match(html, /559478-9819/);
   assert.match(html, /Norra Kustvägen 411/);
   assert.match(html, /mailto:info@altcrz\.se/);
+  assert.match(html, /56\.2503° N · 12\.6607° E/);
+  assert.match(html, /56\.1945° N · 14\.0842° E/);
+  assert.match(html, /KNISLINGE/);
   assert.match(html, /application\/ld\+json/);
   assert.match(html, /https:\/\/altcrz\.se/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|SkeletonPreview/);
+});
+
+test("uses Jonstorp only as part of the company address", async () => {
+  const [pageSource, layoutSource] = await Promise.all([
+    readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
+  ]);
+  const source = `${pageSource}\n${layoutSource}`;
+
+  assert.match(pageSource, /addressLocality: "Jonstorp"/);
+  assert.match(pageSource, /263 92 Jonstorp/);
+  assert.equal(source.match(/\bJonstorp\b/g)?.length, 2);
 });
 
 test("includes the production assets needed by GitHub Pages", async () => {

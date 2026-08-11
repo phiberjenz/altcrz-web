@@ -20,7 +20,7 @@ const companyDetails = [
   ["Juridiskt namn", "ALT CRZ Solutions AB"],
   ["Organisationsnummer", "559478-9819"],
   ["Säte", "Höganäs kommun"],
-  ["Verksamhetsort", "Jonstorp, Sverige"],
+  ["Land", "Sverige"],
 ];
 
 const organizationSchema = {
@@ -72,7 +72,7 @@ export default function Home() {
           <div className="hero-copy">
             <p className="eyebrow">
               <span className="status-dot" aria-hidden="true" />
-              IT-tjänster · Jonstorp, Sverige
+              IT-tjänster · Sverige
             </p>
             <h1 id="hero-title">
               IT-tjänster för en bransch i <em>ständig rörelse.</em>
@@ -96,19 +96,17 @@ export default function Home() {
             <div className="radar-ring radar-ring-one" />
             <div className="radar-ring radar-ring-two" />
             <div className="route-line route-line-one" />
-            <div className="route-line route-line-two" />
             <div className="waypoint waypoint-start" />
-            <div className="waypoint waypoint-mid" />
             <div className="waypoint waypoint-end">
               <span />
             </div>
             <div className="map-label label-start">
-              <span>56.25° N</span>
-              JONSTORP
+              <span>56.2503° N · 12.6607° E</span>
+              START
             </div>
             <div className="map-label label-end">
-              <span>ALT / CRZ</span>
-              SOLUTIONS
+              <span>56.1945° N · 14.0842° E</span>
+              KNISLINGE
             </div>
             <div className="visual-card">
               <span>PRIMÄRT FOKUS</span>
@@ -246,7 +244,7 @@ export default function Home() {
           <div className="footer-meta">
             <span>© 2026 ALT CRZ Solutions AB</span>
             <span>Org.nr 559478-9819</span>
-            <span>Jonstorp, Sverige</span>
+            <span>Sverige</span>
           </div>
         </div>
       </footer>

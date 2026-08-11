@@ -399,18 +399,10 @@ a {
 }
 
 .route-line-one {
-  top: 69%;
-  left: 19%;
-  width: 52%;
-  transform: rotate(-35deg);
-}
-
-.route-line-two {
-  top: 39%;
-  left: 61%;
-  width: 35%;
-  transform: rotate(-52deg);
-  opacity: 0.65;
+  top: 55%;
+  left: 15%;
+  width: 76%;
+  transform: rotate(6deg);
 }
 
 .waypoint {
@@ -424,17 +416,12 @@ a {
 }
 
 .waypoint-start {
-  top: 68.3%;
-  left: 18%;
-}
-
-.waypoint-mid {
-  top: 39%;
-  left: 60%;
+  top: 54.2%;
+  left: 14%;
 }
 
 .waypoint-end {
-  top: 9.5%;
+  top: 61.2%;
   right: 7%;
   width: 13px;
   height: 13px;
@@ -469,12 +456,12 @@ a {
 }
 
 .label-start {
-  top: 73%;
-  left: 18%;
+  top: 43%;
+  left: 14%;
 }
 
 .label-end {
-  top: 14%;
+  top: 66.5%;
   right: 5%;
   text-align: right;
 }
