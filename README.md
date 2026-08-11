@@ -1,6 +1,6 @@
-# ALT CRZ Solutions AB
+# ALT CRZ Solutions
 
-En enkel, modern och responsiv företagswebbplats för ALT CRZ Solutions AB.
+En enkel, modern och responsiv företagswebbplats för ALT CRZ Solutions.
 Sidan är statiskt byggd och förberedd för GitHub Pages på den egna domänen
 `altcrz.se`.
 

@@ -26,7 +26,7 @@ const companyDetails = [
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "ALT CRZ Solutions AB",
+  name: "ALT CRZ Solutions",
   legalName: "ALT CRZ Solutions AB",
   url: "https://altcrz.se",
   email: "info@altcrz.se",
@@ -50,11 +50,11 @@ export default function Home() {
       </a>
 
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="ALT CRZ Solutions AB, startsida">
+        <a className="brand" href="#top" aria-label="ALT CRZ Solutions, startsida">
           <span className="brand-code" aria-hidden="true">
             ALT<span>/</span>CRZ
           </span>
-          <span className="brand-legal">Solutions AB</span>
+          <span className="brand-legal">Solutions</span>
         </a>
 
         <nav className="site-nav" aria-label="Huvudnavigation">
@@ -78,7 +78,7 @@ export default function Home() {
               IT-tjänster för en bransch i <em>ständig rörelse.</em>
             </h1>
             <p className="hero-intro">
-              ALT CRZ Solutions AB utvecklar och driver IT-tjänster med primärt
+              ALT CRZ Solutions utvecklar och driver IT-tjänster med primärt
               fokus på flygbranschen.
             </p>
             <div className="hero-actions">
@@ -182,7 +182,7 @@ export default function Home() {
         <section className="about section-shell" id="om-oss" aria-labelledby="about-title">
           <div className="about-intro">
             <p className="section-kicker">Om företaget</p>
-            <h2 id="about-title">ALT CRZ Solutions AB</h2>
+            <h2 id="about-title">ALT CRZ Solutions</h2>
             <p>
               Ett svenskt aktiebolag med registrerad verksamhet inom utveckling
               och drift av IT-tjänster, primärt riktat mot flygbranschen.
@@ -206,12 +206,12 @@ export default function Home() {
               <h2 id="contact-title">Låt oss börja med en riktning.</h2>
               <p>
                 För affärsförfrågningar och frågor om bolaget är du välkommen
-                att kontakta ALT CRZ Solutions AB.
+                att kontakta ALT CRZ Solutions.
               </p>
             </div>
 
             <address className="contact-address">
-              <span className="contact-company">ALT CRZ Solutions AB</span>
+              <span className="contact-company">ALT CRZ Solutions</span>
               Norra Kustvägen 411
               <br />
               263 92 Jonstorp
@@ -232,10 +232,10 @@ export default function Home() {
             <span className="brand-code" aria-hidden="true">
               ALT<span>/</span>CRZ
             </span>
-            <span className="brand-legal">Solutions AB</span>
+            <span className="brand-legal">Solutions</span>
           </a>
           <div className="footer-meta">
-            <span>© 2026 ALT CRZ Solutions AB</span>
+            <span>© 2026 ALT CRZ Solutions</span>
             <span>Org.nr 559478-9819</span>
             <span>Sverige</span>
           </div>

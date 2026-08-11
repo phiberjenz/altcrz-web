@@ -8,6 +8,7 @@ test("exports a complete Swedish company website", async () => {
   const html = await readFile(new URL("index.html", outputRoot), "utf8");
 
   assert.match(html, /<html[^>]*lang="sv"/i);
+  assert.match(html, /Juridiskt namn/);
   assert.match(html, /ALT CRZ Solutions AB/);
   assert.match(html, /IT-tjänster för en bransch i/);
   assert.match(html, /559478-9819/);
@@ -31,6 +32,18 @@ test("uses Jonstorp only as part of the company address", async () => {
   assert.match(pageSource, /addressLocality: "Jonstorp"/);
   assert.match(pageSource, /263 92 Jonstorp/);
   assert.equal(source.match(/\bJonstorp\b/g)?.length, 2);
+});
+
+test("uses AB only in the legal company name", async () => {
+  const [pageSource, layoutSource] = await Promise.all([
+    readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
+  ]);
+  const source = `${pageSource}\n${layoutSource}`;
+
+  assert.match(pageSource, /\["Juridiskt namn", "ALT CRZ Solutions AB"\]/);
+  assert.match(pageSource, /legalName: "ALT CRZ Solutions AB"/);
+  assert.equal(source.match(/\bAB\b/g)?.length, 2);
 });
 
 test("includes the production assets needed by GitHub Pages", async () => {

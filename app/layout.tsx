@@ -1,15 +1,15 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
-const title = "ALT CRZ Solutions AB | IT-tjänster för flygbranschen";
+const title = "ALT CRZ Solutions | IT-tjänster för flygbranschen";
 const description =
-  "ALT CRZ Solutions AB utvecklar och driver IT-tjänster med primärt fokus på flygbranschen – digitala lösningar för en bransch i ständig rörelse.";
+  "ALT CRZ Solutions utvecklar och driver IT-tjänster med primärt fokus på flygbranschen – digitala lösningar för en bransch i ständig rörelse.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://altcrz.se"),
   title,
   description,
-  applicationName: "ALT CRZ Solutions AB",
+  applicationName: "ALT CRZ Solutions",
   icons: {
     icon: "/icon.png",
     apple: "/apple-touch-icon.png",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "sv_SE",
     url: "/",
-    siteName: "ALT CRZ Solutions AB",
+    siteName: "ALT CRZ Solutions",
     title,
     description,
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "ALT CRZ Solutions AB – IT-tjänster för flygbranschen",
+        alt: "ALT CRZ Solutions – IT-tjänster för flygbranschen",
       },
     ],
   },
