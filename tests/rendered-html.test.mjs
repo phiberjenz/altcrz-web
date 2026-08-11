@@ -15,7 +15,7 @@ test("exports a complete Swedish company website", async () => {
   assert.match(html, /mailto:info@altcrz\.se/);
   assert.match(html, /56\.2503° N · 12\.6607° E/);
   assert.match(html, /56\.1945° N · 14\.0842° E/);
-  assert.match(html, /KNISLINGE/);
+  assert.doesNotMatch(html, />START<|KNISLINGE|visual-card/);
   assert.match(html, /application\/ld\+json/);
   assert.match(html, /https:\/\/altcrz\.se/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|SkeletonPreview/);

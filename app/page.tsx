@@ -102,16 +102,9 @@ export default function Home() {
             </div>
             <div className="map-label label-start">
               <span>56.2503° N · 12.6607° E</span>
-              START
             </div>
             <div className="map-label label-end">
               <span>56.1945° N · 14.0842° E</span>
-              KNISLINGE
-            </div>
-            <div className="visual-card">
-              <span>PRIMÄRT FOKUS</span>
-              <strong>FLYGBRANSCHEN</strong>
-              <i />
             </div>
           </div>
           </section>
