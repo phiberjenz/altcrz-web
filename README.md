@@ -46,6 +46,23 @@ kan ta upp till 24 timmar att slå igenom.
 GitHub-workflowen i `.github/workflows/deploy.yml` bygger, testar och publicerar
 sidan automatiskt vid varje ändring på `main`.
 
+## Sidor för appen myWebLog
+
+Appen myWebLog (ALT CRZ utvecklar den på uppdrag av myWebLog) behöver en
+integritetspolicy och en supportsida som App Store och Google Play kan länka till.
+De ligger under `app/myweblog/`:
+
+| Sida | Svenska | Engelska |
+| --- | --- | --- |
+| Integritetspolicy | `/myweblog/integritet` | `/myweblog/privacy` |
+| Support | `/myweblog/support` | `/myweblog/support/en` |
+
+Sidorna delar ramen i `app/myweblog/Shell.tsx` och stilarna under "Document pages"
+i `app/globals.css`. Webbplatsen exporteras utan avslutande snedstreck
+(`trailingSlash: false`), så `/myweblog/privacy` blir filen `myweblog/privacy.html`,
+som GitHub Pages serverar på den adressen. Uppdatera datumet högst upp på en sida
+när dess innehåll ändras.
+
 ## Inför Apple Developer Program
 
 Sidan visar bolagets juridiska namn, organisationsnummer, adress, verksamhet och

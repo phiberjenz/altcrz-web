@@ -58,3 +58,22 @@ test("includes the production assets needed by GitHub Pages", async () => {
   const cname = await readFile(new URL("CNAME", outputRoot), "utf8");
   assert.equal(cname.trim(), "altcrz.se");
 });
+
+test("exports the myWebLog app's privacy policy and support pages in both languages", async () => {
+  const pages = [
+    ["myweblog/integritet.html", "sv", /Integritetspolicy för appen myWebLog/, /Vem som ansvarar/],
+    ["myweblog/privacy.html", "en", /Privacy Policy for the myWebLog app/, /Who is responsible/],
+    ["myweblog/support.html", "sv", /Support för appen myWebLog/, /Vart vänder jag mig/],
+    ["myweblog/support/en.html", "en", /Support for the myWebLog app/, /Where do I turn/],
+  ];
+
+  for (const [path, lang, heading, section] of pages) {
+    const html = await readFile(new URL(path, outputRoot), "utf8");
+    assert.match(html, new RegExp(`<div lang="${lang}"`, "i"), path);
+    assert.match(html, heading, path);
+    assert.match(html, section, path);
+    assert.match(html, /mailto:info@altcrz\.se/, path);
+    assert.match(html, /ALT CRZ Solutions AB/, path);
+    assert.doesNotMatch(html, /\[test account\]|TODO|lorem/i, path);
+  }
+});
