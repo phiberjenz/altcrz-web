@@ -1215,3 +1215,151 @@ a {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Document pages (the myWebLog app's privacy policy and support) */
+
+.doc-top {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 82% 14%, rgba(67, 112, 132, 0.13), transparent 30%),
+    linear-gradient(130deg, var(--navy-900), var(--navy-950));
+  color: var(--paper);
+}
+
+.doc-top::before {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(119, 147, 160, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(119, 147, 160, 0.055) 1px, transparent 1px);
+  background-size: 96px 96px;
+  content: "";
+  pointer-events: none;
+}
+
+.doc-hero {
+  position: relative;
+  padding: 170px 0 72px;
+}
+
+.doc-hero h1 {
+  max-width: 760px;
+  margin: 0;
+  font-size: clamp(2.3rem, 4.6vw, 3.9rem);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 1.04;
+}
+
+.doc-intro {
+  max-width: 640px;
+  margin: 26px 0 0;
+  color: rgba(244, 241, 233, 0.66);
+  font-size: clamp(1rem, 1.5vw, 1.12rem);
+  line-height: 1.7;
+}
+
+.doc-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  margin: 34px 0 0;
+  color: rgba(244, 241, 233, 0.62);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.doc-meta a {
+  color: var(--amber-soft);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.doc {
+  padding: 64px 0 110px;
+  font-size: 1.04rem;
+  line-height: 1.72;
+}
+
+.doc section {
+  max-width: 720px;
+}
+
+.doc section + section {
+  margin-top: 46px;
+  padding-top: 34px;
+  border-top: 1px solid var(--line-light);
+}
+
+.doc h2 {
+  margin: 0 0 14px;
+  font-size: 1.45rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+.doc h3 {
+  margin: 26px 0 8px;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.doc p,
+.doc ul,
+.doc dl {
+  margin: 0 0 16px;
+}
+
+.doc ul {
+  padding-left: 22px;
+}
+
+.doc li + li {
+  margin-top: 6px;
+}
+
+.doc a {
+  color: #805c18;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.doc a:hover,
+.doc a:focus-visible {
+  color: var(--ink);
+}
+
+.doc dt {
+  margin-top: 18px;
+  font-weight: 700;
+}
+
+.doc dd {
+  margin: 4px 0 0;
+  color: var(--ink-soft);
+}
+
+.doc address {
+  font-style: normal;
+  line-height: 1.8;
+}
+
+@media (max-width: 820px) {
+  /* The brand already leads home; the row has no room for a fourth link on a phone. */
+  .site-nav .nav-home {
+    display: none;
+  }
+
+  .doc-hero {
+    padding: 130px 0 56px;
+  }
+
+  .doc {
+    padding: 44px 0 80px;
+    font-size: 1rem;
+  }
+}
