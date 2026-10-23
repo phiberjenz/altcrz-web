@@ -25,7 +25,7 @@ export default function PrivacyPolicySwedish() {
       eyebrow="Appen myWebLog · Integritet"
       title={title}
       intro="Appen myWebLog visar din flygklubbs bokningar, meddelanden, flygningar och saldo från myWebLog i telefonen. Här beskriver vi vilka uppgifter appen hanterar, var de finns och vad du kan göra med dem."
-      updated="22 oktober 2026"
+      updated="23 oktober 2026"
       alternate={{ href: "/myweblog/privacy", label: "Read this policy in English" }}
     >
       <section aria-labelledby="ansvar">
@@ -102,6 +102,11 @@ export default function PrivacyPolicySwedish() {
           Push-tokens raderas hos myWebLog när du loggar ut. Du kan även stänga av notiser i
           telefonens inställningar när som helst.
         </p>
+        <p>
+          myWebLog loggar också appens anrop till servern, med vilket konto som gjorde dem, för
+          att se hur mycket appen används. Loggarna används inte för reklam och inte för att
+          följa dig utanför appen.
+        </p>
       </section>
 
       <section aria-labelledby="tredje-part">
@@ -118,7 +123,7 @@ export default function PrivacyPolicySwedish() {
           </li>
         </ul>
         <p>
-          Appen innehåller inga verktyg för analys, annonsering eller spårning, och den delar
+          Appen innehåller inga verktyg från andra för analys, annonsering eller spårning, och den delar
           eller säljer inga uppgifter. Den spårar dig inte över andra företags appar eller
           webbplatser.
         </p>
