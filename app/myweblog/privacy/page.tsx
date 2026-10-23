@@ -25,7 +25,7 @@ export default function PrivacyPolicyEnglish() {
       eyebrow="The myWebLog app · Privacy"
       title={title}
       intro="The myWebLog app shows your flying club's bookings, messages, flights and account balance from myWebLog on your phone. This page describes which data the app handles, where it lives and what you can do about it."
-      updated="22 October 2026"
+      updated="23 October 2026"
       alternate={{ href: "/myweblog/integritet", label: "Läs policyn på svenska" }}
     >
       <section aria-labelledby="controller">
@@ -101,6 +101,11 @@ export default function PrivacyPolicyEnglish() {
           Push tokens are deleted at myWebLog when you sign out. You can also turn notifications
           off in the phone&apos;s settings at any time.
         </p>
+        <p>
+          myWebLog also logs the app&apos;s requests to its server, with the account that made
+          them, to see how much the app is used. The logs are not used for advertising or to
+          follow you outside the app.
+        </p>
       </section>
 
       <section aria-labelledby="third-parties">
@@ -117,7 +122,7 @@ export default function PrivacyPolicyEnglish() {
           </li>
         </ul>
         <p>
-          The app contains no analytics, advertising or tracking tools, and it does not share or
+          The app contains no third-party analytics, advertising or tracking tools, and it does not share or
           sell any data. It does not track you across other companies&apos; apps or websites.
         </p>
       </section>
